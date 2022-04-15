@@ -4,7 +4,7 @@
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
-## COMPONENTS REQUIRED:
+### COMPONENTS REQUIRED:
 1.	FSR  (force sensitive resistor)
 2.	1 KΩ resistor 
 3.	Arduino Uno 
@@ -12,7 +12,7 @@ To interface an FSR(force sensitive resistor) and scale the output voltage obtai
 5.	Connecting wires 
 
 
-# THEORY: 
+### THEORY: 
 FSRs are basically a resistor that changes its resistive value (in ohms Ω) depending on how much it is pressed. These sensors are fairly low cost, and easy to use. They also vary some from sensor to sensor perhaps 10%. FSR's resistance changes as more pressure is applied. When there is no pressure, the sensor looks like an infinite resistor (open circuit), as the pressure increases, the resistance goes down. This graph indicates approximately the resistance of the sensor at different force measurements.
  
 
@@ -28,7 +28,7 @@ FSRs are basically a resistor that changes its resistive value (in ohms Ω) depe
 
 
 
-**FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
+### FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
 
 FSRs are often a polymer with conductive material silk-screened on. That means they're plastic and the connection tab is crimped on somewhat delicate material. The best way to connect to these is to simply plug them into a breadboard.
 
@@ -40,7 +40,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 	
   Table -01 indicates the approximate analog voltage based on the sensor force/resistance w/a 5V supply and 10K pull down resistor.
 
-****Vo = Vcc ( R / (R + FSR) )								Eq-01
+### Vo = Vcc ( R / (R + FSR) )								Eq-01
 
 ****Where R= 1KΩ in this experiment 
 ****That is, the voltage is proportional to the inverse of the FSR resistance.
@@ -74,7 +74,8 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 9.	Ensure safety before powering up the device 
 10.	Plot the graph for the output voltage vs the resistance 
 
-****PROGRAM 
+
+### PROGRAM 
  
  
  
@@ -98,7 +99,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 ![image](https://user-images.githubusercontent.com/36288975/163533136-5f8d00f2-8456-4d46-b243-d94d45f83eee.png)
 
-****TABLE -02 OUTPUT VOLTAGES AND CHANGE IN RESISTANCES
+### TABLE -02 OUTPUT VOLTAGES AND CHANGE IN RESISTANCES
 
 
 
@@ -114,4 +115,4 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 
-**RESULTS**: Arduino uno is interfaced with FSR and output values are indicated on a graph.
+### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
