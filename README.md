@@ -2,8 +2,7 @@
 
 
  
- **AIM **
-To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied
+****AIM To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied
 
 COMPONENTS REQUIRED:
 1.	FSR  (force sensitive resistor)
@@ -13,7 +12,7 @@ COMPONENTS REQUIRED:
 5.	Connecting wires 
 
 
-**THEORY:**
+**THEORY: 
 FSRs are basically a resistor that changes its resistive value (in ohms Ω) depending on how much it is pressed. These sensors are fairly low cost, and easy to use. They also vary some from sensor to sensor perhaps 10%. FSR's resistance changes as more pressure is applied. When there is no pressure, the sensor looks like an infinite resistor (open circuit), as the pressure increases, the resistance goes down. This graph indicates approximately the resistance of the sensor at different force measurements.
  
 
@@ -29,8 +28,7 @@ FSRs are basically a resistor that changes its resistive value (in ohms Ω) depe
 
 
 
-**FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE **
-
+**FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
 
 FSRs are often a polymer with conductive material silk-screened on. That means they're plastic and the connection tab is crimped on somewhat delicate material. The best way to connect to these is to simply plug them into a breadboard.
 
@@ -42,10 +40,10 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 	
   Table -01 indicates the approximate analog voltage based on the sensor force/resistance w/a 5V supply and 10K pull down resistor.
 
-Vo = Vcc ( R / (R + FSR) )								Eq-01
+****Vo = Vcc ( R / (R + FSR) )								Eq-01
 
-Where R= 1KΩ in this experiment 
-That is, the voltage is proportional to the inverse of the FSR resistance.
+****Where R= 1KΩ in this experiment 
+****That is, the voltage is proportional to the inverse of the FSR resistance.
 
 
 
@@ -60,7 +58,7 @@ That is, the voltage is proportional to the inverse of the FSR resistance.
 
 
 
-FIGURE-03 CIRCUIT DIAGRAM
+****FIGURE-03 CIRCUIT DIAGRAM
 
 
 
@@ -77,6 +75,8 @@ FIGURE-03 CIRCUIT DIAGRAM
 10.	Plot the graph for the output voltage vs the resistance 
 
 ****PROGRAM 
+ 
+ 
  
  
  
