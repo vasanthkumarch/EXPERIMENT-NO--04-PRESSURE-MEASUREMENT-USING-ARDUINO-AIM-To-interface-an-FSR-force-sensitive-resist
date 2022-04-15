@@ -1,24 +1,24 @@
 # EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
 
 
+## AIM: 
+To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
-** AIM To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied
- 
-**COMPONENTS REQUIRED:
-**1.	FSR  (force sensitive resistor)
+## COMPONENTS REQUIRED:
+1.	FSR  (force sensitive resistor)
 2.	1 KΩ resistor 
 3.	Arduino Uno 
 4.	USB Interfacing cable 
 5.	Connecting wires 
 
 
-**THEORY: 
+# THEORY: 
 FSRs are basically a resistor that changes its resistive value (in ohms Ω) depending on how much it is pressed. These sensors are fairly low cost, and easy to use. They also vary some from sensor to sensor perhaps 10%. FSR's resistance changes as more pressure is applied. When there is no pressure, the sensor looks like an infinite resistor (open circuit), as the pressure increases, the resistance goes down. This graph indicates approximately the resistance of the sensor at different force measurements.
  
 
 ![image](https://user-images.githubusercontent.com/36288975/163532939-d6888ae1-4068-4d83-86a7-fc4c32d5179e.png)
 
-**FIGURE 01 GRAPH OF FORCE vs RESISTANCE **
+### FIGURE 01 GRAPH OF FORCE vs RESISTANCE **
 
 
 
@@ -36,7 +36,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
  ![image](https://user-images.githubusercontent.com/36288975/163532972-2b909551-12c9-485d-adb1-d1e988d557bd.png)
 
-**TABLE -01 FORCE AND OUTPUT VOLTAGES**
+### TABLE -01 FORCE AND OUTPUT VOLTAGES**
 	
   Table -01 indicates the approximate analog voltage based on the sensor force/resistance w/a 5V supply and 10K pull down resistor.
 
@@ -58,11 +58,11 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 
-****FIGURE-03 CIRCUIT DIAGRAM
+### FIGURE-03 CIRCUIT DIAGRAM
 
 
 
-****PROCEDURE:
+### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
 3.	If needed, install the drivers.
