@@ -1,32 +1,25 @@
-# EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
-
+# EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
+### Name: Anbuselvan.S
+### Reference No: 212223240008
 
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
-### COMPONENTS REQUIRED:
+## COMPONENTS REQUIRED:
 1.	FSR  (force sensitive resistor)
 2.	1 KΩ resistor 
 3.	Arduino Uno 
 4.	USB Interfacing cable 
 5.	Connecting wires 
 
-
-### THEORY: 
+## THEORY: 
 FSRs are basically a resistor that changes its resistive value (in ohms Ω) depending on how much it is pressed. These sensors are fairly low cost, and easy to use. They also vary some from sensor to sensor perhaps 10%. FSR's resistance changes as more pressure is applied. When there is no pressure, the sensor looks like an infinite resistor (open circuit), as the pressure increases, the resistance goes down. This graph indicates approximately the resistance of the sensor at different force measurements.
  
-
 ![image](https://user-images.githubusercontent.com/36288975/163532939-d6888ae1-4068-4d83-86a7-fc4c32d5179e.png)
 
 ### FIGURE 01 GRAPH OF FORCE vs RESISTANCE **
 
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163532957-82d57567-a1c3-48c5-8a87-7ea66d6fca49.png)
-
-
-
 
 ### FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
 
@@ -42,27 +35,14 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 ### Vo = Vcc ( R / (R + FSR) )								Eq-01
 
-****Where R= 1KΩ in this experiment 
-****That is, the voltage is proportional to the inverse of the FSR resistance.
+Where R= 1KΩ in this experiment 
+That is, the voltage is proportional to the inverse of the FSR resistance.
 
-
-
-
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/36288975/163532979-a2a5cb5c-f495-442c-843e-bebb82737a35.png)
-
-
+![Screenshot 2024-02-29 135526](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/150007305/5a8dea30-7277-41b1-8f5e-c8b6b8d76b55)
 
 ### FIGURE-03 CIRCUIT DIAGRAM
 
-
-
-### PROCEDURE:
+## PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
 3.	If needed, install the drivers.
@@ -75,34 +55,48 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+## PROGRAM 
+```
+Register No: 212223240008
+Name: Anbuselvan.S
+Dept/Year: AIML 1st year 
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+int f_sen;
+int led=7;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  f_sen=analogRead(A0);
+  Serial.print("raw value=");
+  Serial.println(f_sen);
+  delay(1000);
+  int m;
+  m = map(f_sen,0,159,0,10);
+  Serial.print("mapped value=");
+  Serial.println(m);
+  delay(1000);
+  
+  if (m>5);
+{
+  digitalWrite (led,HIGH);
+   delay(500);
+  digitalWrite(led,LOW);
+   delay(500);
+}
+}
+```
 
 
+![Screenshot 2024-02-29 142033](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/150007305/902c3d35-b2bf-42f7-9c36-ac585d19528e)
 ### TABLE -02 standard deviation table 
+
 ### Population Standard Deviation
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
-
-
 
 Where
 xi is an individual value
@@ -115,18 +109,9 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
+### Graph : FSR vs mapped value Comparison
 
+![Screenshot 2024-03-01 081741](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/150007305/85d32191-6c42-484e-a66e-8514e9f9f17d)
 
-
-
-
-
-
-
-
-
-
-
-
-
-### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+## RESULTS :
+Arduino uno is interfaced with FSR and output values are indicated on a graph.
