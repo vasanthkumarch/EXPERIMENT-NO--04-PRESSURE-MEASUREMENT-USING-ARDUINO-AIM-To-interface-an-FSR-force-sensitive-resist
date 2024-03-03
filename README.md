@@ -1,9 +1,9 @@
 # EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
 
-# DATE :
-# NAME :
-# ROLLNUMBER :
-# DEPARTMENT
+# DATE :03-03-2024
+# NAME : V RAKSHA DHARANIKA
+# ROLLNUMBER :212223230167
+# DEPARTMENT:AIDS
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
@@ -61,7 +61,6 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 
-### FIGURE-03 CIRCUIT DIAGRAM
 
 
 
@@ -79,9 +78,43 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+ * your roll no :212223230167,
+ * your name :V RAKSHA DHARANIKA,
+ * department and year: AIDS AND 1ST YEAR.
+
+```
+
+int f;
+int LED=7;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600); 
+    
+}
+
+void loop()
+{
+  f=analogRead(A0);
+  Serial.print("raw value=");
+  Serial.println(f);
+  delay(1000);
+  int m;
+  m=map(f,0,159,0,10);
+  Serial.print("mapped value=");
+  Serial.println(m);
+  delay(1000);
+  
+  
+  if(m>5)
+  { 
+  digitalWrite(LED,HIGH);
+    delay(500);
+  digitalWrite(LED,LOW);
+    delay(500);
+  }  
+}
+```
  
  
  
@@ -98,10 +131,22 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  
  
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+
+### TABLE -02 standard deviation table
 
 
-### TABLE -02 standard deviation table 
+
+![image](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/defe26a7-4636-42e2-88b6-ab4a7c0fb2d5)
+
+### Graph:
+
+
+
+
+
+![image](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/13aefe9f-8671-441a-a625-22921cf38c46)
+
+
 ### Population Standard Deviation
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
 
@@ -117,6 +162,26 @@ For those unfamiliar with summation notation, the equation above may seem daunti
 EX:           μ = (1+3+4+7+8) / 5 = 4.6        
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
+### Output Of Simulation:
+
+
+
+
+
+
+# On Simulation:
+
+
+![Screenshot (63)](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/402f0335-50cc-419a-8eb6-c3f9859d7c03)
+
+# Schematic Representation:
+
+
+
+![Screenshot (64)](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/b4428974-319d-4a5c-986b-1e43b4feb63b)
+
+
+
 
 
 
