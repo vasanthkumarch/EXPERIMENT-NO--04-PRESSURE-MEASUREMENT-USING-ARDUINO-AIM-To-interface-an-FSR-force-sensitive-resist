@@ -79,9 +79,43 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+ *your roll no :212223230167,
+ * your name :V RAKSHA DHARANIKA,
+ * department and year: AIDS AND 1ST YEAR.
+
+```
+
+int f;
+int LED=7;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600); 
+    
+}
+
+void loop()
+{
+  f=analogRead(A0);
+  Serial.print("raw value=");
+  Serial.println(f);
+  delay(1000);
+  int m;
+  m=map(f,0,159,0,10);
+  Serial.print("mapped value=");
+  Serial.println(m);
+  delay(1000);
+  
+  
+  if(m>5)
+  { 
+  digitalWrite(LED,HIGH);
+    delay(500);
+  digitalWrite(LED,LOW);
+    delay(500);
+  }  
+}
+```
  
  
  
@@ -118,6 +152,11 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
+###OUTPUT:
+
+
+
+![Screenshot (63)](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/402f0335-50cc-419a-8eb6-c3f9859d7c03)
 
 
 
