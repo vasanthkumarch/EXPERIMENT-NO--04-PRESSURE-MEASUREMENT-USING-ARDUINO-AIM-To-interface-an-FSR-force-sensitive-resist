@@ -1,9 +1,9 @@
 # EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
 
-# DATE :
-# NAME :
-# ROLLNUMBER :
-# DEPARTMENT
+# DATE :03-03-2024
+# NAME : V RAKSHA DHARANIKA
+# ROLLNUMBER :212223230167
+# DEPARTMENT:AIDS
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
@@ -61,7 +61,6 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 
-### FIGURE-03 CIRCUIT DIAGRAM
 
 
 
@@ -132,8 +131,6 @@ void loop()
  
  
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
-
 
 ### TABLE -02 standard deviation table
 
@@ -151,12 +148,14 @@ no	force applies	mapped value	SIGMA	error
 10	10	10	-6.7	0.22
 	MU	6.7	-2.27	
 			0.15066	
-![image](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/d199cf81-7e0e-429d-b9df-644db26c6702)
+
+### Graph:
 
 
 
 
 
+![image](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/13aefe9f-8671-441a-a625-22921cf38c46)
 
 
 ### Population Standard Deviation
@@ -174,12 +173,27 @@ For those unfamiliar with summation notation, the equation above may seem daunti
 EX:           μ = (1+3+4+7+8) / 5 = 4.6        
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
+### Output Of Simulation:
 
-###OUTPUT:
 
+
+
+
+
+# On Simulation:
 
 
 ![Screenshot (63)](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/402f0335-50cc-419a-8eb6-c3f9859d7c03)
+
+# Schematic Representation:
+
+
+
+![Screenshot (64)](https://github.com/rakshadharanika/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/149348380/b4428974-319d-4a5c-986b-1e43b4feb63b)
+
+
+
+
 
 
 
