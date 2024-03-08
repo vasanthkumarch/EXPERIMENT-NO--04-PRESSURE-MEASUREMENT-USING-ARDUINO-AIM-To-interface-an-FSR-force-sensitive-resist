@@ -79,6 +79,42 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
+![image](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/144979934/69943420-0313-4d90-9ddc-e2a007413b21)
+
+TABLE -02 standard deviation table
+Population Standard Deviation
+The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
+
+Where xi is an individual value μ is the mean/expected value N is the total number of values
+
+For those unfamiliar with summation notation, the equation above may seem daunting, but when addressed through its individual components, this summation is not particularly complicated. The i=1 in the summation indicates the starting index, i.e. for the data set 1, 3, 4, 7, 8, i=1 would be 1, i=2 would be 3, and so on. Hence the summation notation simply means to perform the operation of (xi - μ)2 on each value through N, which in this case is 5 since there are 5 values in this data set.
+
+EX: μ = (1.05 + 2.05 + 3.09 + 4.03 + 5.09 + 6.12 + 7.09 + 8.12 + 9.22 + 10) / 10 = 5.586
+σ = √[(1.05-5.586)^2 + (2.05 - 5.586)^2 + ... + (10 - 5.586)^2)]/10 σ = √(20.57 + 12.50 + 6.23 + 2.42 + 0.24 + 0.28 + 2.262 + 6.42 + 13.20 + 19.483)/10 = 2.891
+
+### OUTPUT
+###FIGURE 01:
+
+![image](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/144979934/4b319bca-10f6-4e89-84a7-73cfc4bad056)
+
+###LED OFF:
+![image](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/144979934/afda48cc-f082-4740-8c69-78457a81088b)
+
+###SCHEMATIC VIEW
+
+![image](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/144979934/b5ed35ea-2f97-4910-94de-a43d62080acd)
+
+
+###TABULATED VIEW:
+![image](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/144979934/8a2b8a93-adf8-4df5-8786-1db4ff62c53f)
+
+###GRAPH:
+
+![image](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/144979934/f7dfe7ae-76ed-483b-a3da-8ad102f6ec2f)
+
+
+RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+
  *your roll no 
  * your name 
  * department and year 
